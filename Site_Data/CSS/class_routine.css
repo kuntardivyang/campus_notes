@@ -1,0 +1,65 @@
+/* pdf_viewer.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
+}
+
+header {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    /* Gradient header */
+    padding: 20px 0;
+    color: #ecf0f1;
+    /* Light gray text */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+nav a {
+    color: #ecf0f1;
+    /* Light gray text */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+    /* Lighter blue on hover */
+}
+
+.pdf-container {
+    padding: 20px;
+    background-color: #ffffff;
+    /* White content background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Slightly larger shadow */
+    border-radius: 12px;
+    /* More rounded corners */
+    margin-top: 20px;
+}
+
+footer {
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    /* Gradient footer */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

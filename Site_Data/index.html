@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>theTechnoCrate</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to theTechnoCrate</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+
+    <div class="container">
+        <h2>Select Your Semester</h2>
+        <select id="semesterSelect" onchange="navigateToSemester()">
+            <option value="#" disabled selected>Select Semester here</option>
+            <option value="Semester_1.html">Semester 1</option>
+            <option value="Semester_2.html">Semester 2</option>
+            <option value="Semester_3.html">Semester 3</option>
+            <!-- Add more semester options -->
+        </select>
+
+        <!-- Add more content here -->
+    </div>
+
+    <footer>
+        &copy; 2023 theTechnoCrate. All rights reserved.
+    </footer>
+
+    <script>
+        function navigateToSemester() {
+            // Get the selected value
+            var selectedSemester = document.getElementById("semesterSelect").value;
+
+            // Navigate to the selected semester page
+            window.location.href = selectedSemester;
+        }
+    </script>
+
+</body>
+
+</html>

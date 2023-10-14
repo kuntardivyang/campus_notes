@@ -1,0 +1,81 @@
+/* index.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
+}
+
+header {
+    background-color: #3498db;
+    /* Blue header */
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    /* White text */
+}
+
+nav {
+    background-color: #2980b9;
+    /* Darker blue navigation bar */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    /* White text */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #1f618d;
+    /* Darker blue on hover */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    /* White content background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Slightly larger shadow */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+select {
+    padding: 12px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 6px;
+    /* Rounded corners */
+}
+
+#pdfViewer {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #3498db;
+    /* Blue footer */
+    color: #ffffff;
+    /* White text */
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
