@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Bank Solutions</title>
+    <link rel="stylesheet" type="text/css" href="CSS/QBsolutions.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Question Bank Solutions</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <!-- Add more navigation links as needed -->
+    </nav>
+
+    <div class="container">
+        <h2>Select Question Bank Solution</h2>
+        <select id="solutionSelect" onchange="displaySolution()">
+            <option value="#" disabled selected>Select Solution here</option>
+            <option value="dbms_ipe.pdf">Java Solution</option>
+            <option value="path/to/maths_solution.pdf">Maths Solution</option>
+            <option value="path/to/physics_solution.pdf">Physics Solution</option>
+            <!-- Add more solution options as needed -->
+        </select>
+
+        <div id="solutionViewer">
+            <!-- Solution will be displayed here -->
+        </div>
+    </div>
+    <br><br><br><br><br>
+    <footer>
+        &copy; 2023 theTechnoCrate. All rights reserved.
+    </footer>
+
+    <script>
+        function displaySolution() {
+            // Get the selected value
+            var selectedSolution = document.getElementById("solutionSelect").value;
+
+            // Display the selected solution PDF
+            if (selectedSolution !== "#") {
+                var solutionViewer = document.getElementById("solutionViewer");
+                solutionViewer.innerHTML = '<iframe src="' + selectedSolution + '" width="100%" height="800px"></iframe>';
+            } else {
+                // Clear the solution viewer if no option is selected
+                document.getElementById("solutionViewer").innerHTML = "";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
